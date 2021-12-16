@@ -89,3 +89,7 @@ h1.title {
 	padding: 3px 8px;
 	border-radius: 8px;
 }
+.person-position {
+	color: var(--font-color-base);
+	font-size: 10px;
+}

@@ -181,19 +181,20 @@ header {
 	font-weight: 700;
 }
 .learn-banner {
+	padding-top: 40px;
+	position: relative;
+	height: 100%;
 	margin-right: auto;
 	margin-left: auto;
-	padding-top: 40px;
 	width: 100%;
-	/* height: 100%; */
+	height: 100%;
+	max-width: 680px;
 	max-width: 680px;
 	max-height: 375px;
-	position: relative;
 }
 .learn-banner img {
 	width: 100%;
-	height: 100%;
-	/* max-height: 375px; */
+	height: 375px;
 	object-fit: cover;
 }
 .learn-btn {
@@ -202,7 +203,7 @@ header {
 	border-radius: 50%;
 	position: absolute;
 	top: 50%;
-	left: 50%;
+	left: 45%;
 }
 .learn-btn i {
 	font-size: 22px;
@@ -210,5 +211,42 @@ header {
 	transform: rotate(40deg);
 }
 .director-testimonial-wrapper {
-	padding-top: 40px;
+	background-image: url("../assets/icons/dots.svg");
+	background-position: 35px 100%;
+	background-size: 150px;
+	background-repeat: no-repeat;
+	padding-top: 145px;
+	min-height: 620px;
+}
+.director-img {
+	max-width: 360px;
+	margin-left: 70px;
+}
+.director-testimonial-wrapper .block-text {
+	width: 100%;
+	max-width: 400px;
+}
+.director-testimonial-wrapper .block-text img {
+	max-width: 80px;
+}
+.director-testimonial-wrapper .block-text p {
+	font-size: 18px;
+	line-height: 1.4;
+	padding-bottom: 30px;
+}
+.info-person {
+	padding-bottom: 20px;
+}
+.company-logo-wrapper {
+	padding-top: 60px;
+	text-align: center;
+	justify-content: space-evenly;
+}
+.company-logos {
+	justify-content: space-around;
+	margin-top: 60px;
+}
+.company-logo-wrapper img {
+	width: 100%;
+	max-width: 70px;
 }
