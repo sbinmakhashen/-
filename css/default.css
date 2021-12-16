@@ -73,7 +73,7 @@ h1.title {
 	margin-bottom: 0;
 }
 .section-subtitle {
-	display: inline-block;
+	/* display: inline-block; */
 	font-size: 13px;
 	color: var(--font-color-base);
 	padding-top: 20px;

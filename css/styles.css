@@ -104,7 +104,7 @@ header {
 	padding-top: 10px;
 }
 .feature-card {
-	box-shadow: 0 5px 15px rgba(51, 51, 51, 0.1);
+	box-shadow: 0 10px 15px rgba(221, 221, 221, 0.2);
 	display: inline-block;
 	max-width: 205px;
 	width: 100%;
@@ -258,25 +258,29 @@ header {
 }
 .pricing-cards-container {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-	grid: 20px;
+	grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+	gap: 10px;
+	width: 100%;
 }
 
 .pricing-card {
-	padding: 10px;
+	/* padding: 10px; */
+	width: 100%;
+	margin: 10px;
 }
 .pricing-card img {
 	width: 30px;
 	height: 30px;
 }
 .pricing-card.featured-card {
-	grid-column: 1 / span;
 	grid-row: 1 / span 2;
-	margin-right: 50px;
-	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-	border-radius: 8px;
-	padding: 20px;
-	max-width: 350px;
+	grid-column: 1 / span 2;
+	margin-right: 20px;
+	box-shadow: 0 10px 15px rgba(221, 221, 221, 0.2);
+	border-radius: 5px;
+	padding-top: 10px;
+	width: 100%;
+	max-width: 360px;
 }
 .price {
 	font-size: 47px;
@@ -288,23 +292,32 @@ header {
 	content: "";
 	display: block;
 	width: 100%;
+	max-width: 250px;
 	height: 1px;
 	background-color: #cecece;
-	margin-top: 25px;
+	margin-top: 15px;
+	margin-left: auto;
+	margin-right: auto;
 }
 .price span {
 	font-weight: 400;
 	font-size: 20px;
 }
 .pricing-card .section-subtitle {
-	padding-top: 12px;
 	line-height: 1.5;
-	padding-left: 10px;
+}
+.featured-card .section-subtitle {
+	display: block;
+	padding-top: 20px;
+	padding-left: 25px;
 }
 .btn-group {
-	padding-top: 35px;
-	padding-left: 30px;
+	padding: 40px;
 }
 .btn-group .section-subtitle {
+	display: block;
+	padding-top: 8px;
+	padding-left: 0;
 	font-size: 10px;
 }
+/* hire us */
