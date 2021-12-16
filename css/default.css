@@ -4,6 +4,7 @@
 	--font-color-dark: #1e2022;
 	--font-color-link: #377dff;
 	--light-bg: #f6f6fc;
+	--dark-bg: #23345c;
 }
 
 html {
@@ -73,7 +74,6 @@ h1.title {
 	margin-bottom: 0;
 }
 .section-subtitle {
-	/* display: inline-block; */
 	font-size: 13px;
 	color: var(--font-color-base);
 	padding-top: 20px;

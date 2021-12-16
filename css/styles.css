@@ -264,7 +264,6 @@ header {
 }
 
 .pricing-card {
-	/* padding: 10px; */
 	width: 100%;
 	margin: 10px;
 }
@@ -321,3 +320,32 @@ header {
 	font-size: 10px;
 }
 /* hire us */
+.hire-us-bg {
+	background-color: var(--dark-bg);
+	color: var(--white);
+	width: 100%;
+	margin-top: 95px;
+	height: 100%;
+	min-height: 640px;
+}
+.hire-us-col1 {
+	height: 100%;
+	margin-top: 140px;
+	margin-left: 35px;
+}
+.hire-us-col1 .section-subtitle {
+	color: #cecece;
+}
+.testimonials-wrapper {
+	padding-top: 40px;
+}
+.testimonial-desc {
+	font-size: 18px;
+}
+.people-icons img {
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	object-fit: cover;
+	opacity: 0.6;
+}
