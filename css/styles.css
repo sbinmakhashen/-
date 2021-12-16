@@ -1,0 +1,214 @@
+header {
+	width: 100%;
+	padding-bottom: 45px;
+	background-color: var(--light-bg);
+}
+.header-top div a,
+.header-top a {
+	padding-right: 15px;
+	margin-bottom: 10px;
+	font-size: 12px;
+}
+.logo-wrapper {
+	max-width: 107px;
+	width: 100%;
+	padding-top: 5px;
+}
+.navbar ul {
+	margin-left: 10px;
+}
+.navbar ul li {
+	padding-right: 15px;
+}
+/* hero */
+#hero {
+	background-color: var(--light-bg);
+	padding-bottom: 50px;
+}
+#hero .container.flexbox {
+	align-items: unset;
+}
+.hero-col1 {
+	margin-top: 8px;
+}
+.hero-col1 .btn-group {
+	margin-top: 25px;
+}
+.hero-col2 {
+	display: grid;
+	grid-template-areas:
+		"google . . . . . asana"
+		". . . . . . asana"
+		". . atlassian . . . asana"
+		". . . . . . ."
+		"paypal . . . . weave ."
+		". . google-ads . . . ."
+		". . . . . . calendar";
+	width: 100%;
+	height: 100%;
+	max-width: 400px;
+}
+.hero-col2 .hero-icon-wrapper,
+.hero-col2 .google-icon-wrapper {
+	border-radius: 50%;
+	background-color: var(--white);
+	padding: 20px;
+}
+.hero-col2 .hero-icon-wrapper {
+	max-width: 70px;
+	max-height: 70px;
+	width: 100%;
+}
+.hero-col2 .google-icon-wrapper {
+	max-width: 60px;
+	max-height: 60px;
+	padding: 10px;
+}
+.google {
+	grid-area: google;
+	margin-left: 10px;
+}
+.atlassian {
+	grid-area: atlassian;
+	margin-bottom: 40px;
+}
+.asana {
+	grid-area: asana;
+	margin-top: 10px;
+}
+.paypal {
+	grid-area: paypal;
+}
+.weave {
+	grid-area: weave;
+}
+.google-ads {
+	grid-area: google-ads;
+	margin-top: 40px;
+}
+.calendar {
+	grid-area: calendar;
+}
+/* features */
+.features-header {
+	text-align: center;
+	padding-top: 70px;
+	padding-bottom: 40px;
+}
+.features-header .section-title {
+	margin-bottom: 5px;
+}
+.feature-cards-wrapper .block {
+	display: block;
+	color: var(--font-color-link);
+	padding-top: 10px;
+}
+.feature-card {
+	box-shadow: 0 5px 15px rgba(51, 51, 51, 0.1);
+	display: inline-block;
+	max-width: 205px;
+	width: 100%;
+	padding: 15px;
+	border-radius: 8px;
+}
+.feature-content img {
+	width: 45px;
+	height: 45px;
+}
+.feature-content h3 {
+	color: var(--font-color-dark);
+}
+.feature-content .subtitle {
+	font-size: 11px;
+	text-align: justify;
+}
+.feature-bottom-container {
+	margin-top: 120px;
+	background-color: var(--light-bg);
+	width: 100%;
+	height: 100%;
+	min-height: 385px;
+}
+.feature-bottom-container .block-text {
+	padding-left: 40px;
+}
+.feature-bottom-container h2 {
+	font-size: 25px;
+	line-height: 1.5;
+}
+.feature-banner-wrapper {
+	width: 100%;
+	max-width: 500px;
+	margin-top: auto;
+}
+
+/* learn */
+.learn-header {
+	text-align: center;
+	padding-top: 40px;
+}
+.learn-timeline {
+	padding-top: 70px;
+	max-width: 620px;
+	width: 100%;
+	margin: auto;
+}
+.timeline-icons i {
+	display: inline;
+	background-color: var(--light-bg);
+	padding: 15px;
+	font-size: 5px;
+	color: #00c9a6;
+	border-radius: 50%;
+	text-align: center;
+}
+.timeline-icons i:first-child {
+	padding-left: 20px;
+}
+.timeline-icons span {
+	display: inline-block;
+	background-color: #cecece;
+	height: 1.02px;
+	width: 100%;
+	max-width: 100px;
+	margin: 0 20px;
+}
+.timeline-icons span:last-child {
+	display: none;
+}
+.timeline-text {
+	padding-top: 10px;
+	font-weight: 700;
+}
+.learn-banner {
+	margin-right: auto;
+	margin-left: auto;
+	padding-top: 40px;
+	width: 100%;
+	/* height: 100%; */
+	max-width: 680px;
+	max-height: 375px;
+	position: relative;
+}
+.learn-banner img {
+	width: 100%;
+	height: 100%;
+	/* max-height: 375px; */
+	object-fit: cover;
+}
+.learn-btn {
+	background-color: var(--white);
+	padding: 15px 20px;
+	border-radius: 50%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+}
+.learn-btn i {
+	font-size: 22px;
+	color: var(--font-color-dark);
+	transform: rotate(40deg);
+}
+.director-testimonial-wrapper {
+	padding-top: 40px;
+}
