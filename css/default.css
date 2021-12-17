@@ -45,7 +45,18 @@ a {
 li {
 	list-style: none;
 }
-
+input,
+select,
+textarea {
+	outline: none;
+	border: 1.1px solid #cecece;
+	border-radius: 5px;
+	padding: 10px;
+}
+label {
+	color: var(--font-color-base);
+	font-size: 10px;
+}
 img {
 	width: 100%;
 	max-width: 100%;
@@ -58,10 +69,19 @@ img {
 	border-radius: 30px;
 	outline: none;
 	padding: 10px 13px;
+	font-weight: 600;
 }
 .btn-primary {
 	color: var(--white);
 	background-color: var(--font-color-link);
+}
+.btn-outline {
+	display: inline-block;
+	color: var(--white);
+	width: 100%;
+	background-color: var(--font-color-link);
+	border-radius: 5px;
+	padding: 13px;
 }
 h1.title {
 	font-size: 48px;

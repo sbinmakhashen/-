@@ -378,11 +378,11 @@
 					</div>
 
 					<form class="hire-us-col2" autocomplete="on">
-						<h1 class="form-title">
+						<h2 class="subtitle">
 							Fill out the form and we'll be in touch as soon as possible
-						</h1>
+						</h2>
 
-						<div class="input-fields">
+						<div class="input-fields flexbox">
 							<input
 								type="text"
 								name="first-name"
@@ -399,7 +399,7 @@
 							/>
 						</div>
 
-						<div class="input-fields">
+						<div class="input-fields flexbox">
 							<input
 								type="email"
 								name="email"
@@ -414,7 +414,7 @@
 								placeholder="Company website"
 							/>
 						</div>
-						<div class="input-fields">
+						<div class="input-fields flexbox">
 							<select name="budget" id="budget">
 								<option value="" selected disabled>Budget</option>
 								<option value="$1,000">$1,000</option>
@@ -440,21 +440,26 @@
 						<textarea
 							name="message"
 							id="message"
-							cols="40"
-							rows="10"
+							cols="37"
+							rows="4"
 							placeholder="Tell us more about your project, needs, and timeline"
 						></textarea>
 
-						<div class="input-fields">
-							<input type="checkbox" name="policy" id="privatePolicy" />
-							<label for="policy">
-								Yes, I'd like to receive occasional marketing emails from <br />
-								Front. I have the right to opt out at any time.
-								<a href="#">View privacy policy.</a>
-							</label>
+						<div class="input-fields policy flexbox">
+							<div>
+								<input type="checkbox" name="policy" id="privatePolicy" />
+							</div>
+							<div>
+								<label for="section-subtitle">
+									Yes, I'd like to receive occasional marketing emails from
+									<br />
+									Front. I have the right to opt out at any time.
+									<a href="#">View privacy policy.</a>
+								</label>
+							</div>
 						</div>
 
-						<input type="submit" value="Get Started" class="btn btn-primary" />
+						<input type="submit" value="Get Started" class="btn btn-outline" />
 					</form>
 				</div>
 			</section>
