@@ -15,6 +15,11 @@ header {
 .navbar ul li {
 	padding-right: 15px;
 }
+
+.home,
+.hero-col1 .btn:last-child {
+	color: var(--font-color-link);
+}
 /* hero */
 #hero {
 	background-color: var(--light-bg);
@@ -99,12 +104,16 @@ header {
 	padding-top: 10px;
 }
 .feature-card {
-	box-shadow: 0 10px 15px rgba(221, 221, 221, 0.2);
+	box-shadow: 0 10px 10px rgba(221, 221, 221, 0.4);
 	display: inline-block;
 	max-width: 205px;
 	width: 100%;
 	padding: 15px;
 	border-radius: 8px;
+	transition: 0.1s ease-in-out;
+}
+.feature-card:hover {
+	transform: scale(1.05);
 }
 .feature-content img {
 	width: 45px;
@@ -270,7 +279,7 @@ header {
 	grid-row: 1 / span 2;
 	grid-column: 1 / span 2;
 	margin-right: 20px;
-	box-shadow: 0 10px 15px rgba(221, 221, 221, 0.2);
+	box-shadow: 0 10px 10px rgba(221, 221, 221, 0.4);
 	border-radius: 5px;
 	padding-top: 10px;
 	width: 100%;
@@ -336,6 +345,7 @@ header {
 }
 .testimonial-desc {
 	font-size: 18px;
+	font-style: italic;
 }
 .testimonials-wrapper .person-name {
 	font-size: inherit;
@@ -373,6 +383,7 @@ header {
 	margin-top: 50px;
 	padding: 25px 40px;
 	border-radius: 5px;
+	box-shadow: 0 0 15px rgba(180, 172, 172, 0.4);
 }
 .hire-us-col2 h2 {
 	color: var(--font-color-dark);
@@ -383,10 +394,13 @@ header {
 	flex-wrap: initial;
 	margin-top: 23px;
 }
-.hire-us-col2 input,
-.input-fields select {
+.hire-us-col2 input {
 	width: 100%;
 	color: var(--font-color-base);
+}
+.input-fields select {
+	cursor: pointer;
+	width: 100%;
 }
 .input-fields input:nth-child(2),
 .input-fields select:nth-child(2) {
@@ -418,18 +432,21 @@ input[type="checkbox"] {
 .hire-us-col2 .btn-outline {
 	color: var(--white);
 	margin-bottom: 20px;
+	cursor: pointer;
 }
 
 /* footer */
 .footer-wrapper {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-	padding: 90px 0;
+	grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+	padding-top: 90px;
+	padding-bottom: 40px;
 }
 .footer-address-col {
 	width: 100%;
 	grid-column: 1 / span 2;
 	padding: 10px 0;
+	margin-right: 20px;
 }
 .footer-wrapper ul {
 	padding: 0;
