@@ -41,7 +41,12 @@ a {
 	color: var(--font-color-base);
 	font-size: 13px;
 }
-
+.logo-wrapper {
+	display: inline-block;
+	max-width: 107px;
+	width: 100%;
+	padding-top: 5px;
+}
 li {
 	list-style: none;
 }
@@ -62,6 +67,10 @@ img {
 	max-width: 100%;
 	vertical-align: middle;
 	border-style: none;
+}
+address {
+	display: block;
+	margin-top: 20px;
 }
 .btn {
 	display: inline-block;
@@ -103,12 +112,19 @@ h1.title {
 	color: var(--font-color-base);
 	font-size: 16px;
 }
-.green-tag {
+.green-tag,
+.blue-tag {
 	color: var(--white);
+	border-radius: 5px;
+	padding: 3px 8px;
+}
+.green-tag {
 	background-color: #00c9a6;
 	font-size: 11px;
-	padding: 3px 8px;
-	border-radius: 8px;
+}
+.blue-tag {
+	background-color: var(--font-color-link);
+	font-size: 9px;
 }
 .person-position {
 	color: var(--font-color-base);
