@@ -90,9 +90,28 @@
 }
 /* Mobile phones */
 @media screen and (max-width: 480px) {
+	.hero-col1 .title {
+		font-size: 40px;
+	}
+	.hero-col1 .subtitle {
+		font-size: 15px;
+	}
 	/* features */
 	.feature-cards-wrapper {
 		justify-content: center;
+	}
+	/* learn */
+	.timeline-icons span {
+		max-width: 10px;
+		margin: 0;
+	}
+	.timeline-text {
+		justify-content: center;
+		flex-wrap: initial;
+	}
+	.timeline-text p {
+		font-size: 10px;
+		padding: 0 2px;
 	}
 	/* footer */
 	.footer-wrapper {
