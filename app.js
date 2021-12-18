@@ -1,5 +1,8 @@
-const stickyHeader = document.querySelector('.header-bottom');
-
+// variables
+const stickyHeader = document.getElementById('headerBottom');
+const navBtn = document.getElementById("navToggler");
+const navbar = document.getElementById('navbar');
+// functions
 window.addEventListener('scroll', (e) => {
     if(window.scrollY >= 500) {
         stickyHeader.classList.add("active");
@@ -7,3 +10,8 @@ window.addEventListener('scroll', (e) => {
         stickyHeader.classList.remove("active");
     }
 });
+navBtn.addEventListener('click', (e) => toggleBtn(e));
+
+function toggleBtn(e) {
+    navbar.style.display = "block"
+}

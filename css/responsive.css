@@ -1,9 +1,73 @@
-/* Tablets */
-@media (min-width: 768px) {
-	.container {
-		max-width: 900px;
+/* Tablet */
+@media screen and (max-width: 768px) {
+	.header-bottom .header-bottom,
+	.header-bottom a {
+		display: inline-block;
 	}
-	.container.c-active {
-		max-width: 900px;
+	.header-bottom div {
+		float: right;
+		padding-top: 10px;
+	}
+	.navbar {
+		display: none;
+	}
+	.navbar ul {
+		display: block;
+	}
+	#hero .container,
+	.feature-bottom-container,
+	.director-testimonial-wrapper,
+	#hireUs .container {
+		justify-content: initial;
+		align-items: initial;
+		text-align: center;
+		flex-direction: column;
+	}
+	.hero-col1 {
+		padding-bottom: 20px;
+	}
+	.hero-col1 br,
+	.feature-bottom-container br,
+	.director-testimonial-wrapper .block-text br {
+		display: none;
+	}
+	.hero-col2 {
+		max-width: initial;
+		padding: 0 50px;
+	}
+	.feature-banner-wrapper {
+		padding-top: 20px;
+		margin: auto;
+	}
+	.timeline-icons span {
+		max-width: 60px;
+	}
+	.timeline-icons {
+		text-align: center;
+	}
+	.director-testimonial-wrapper {
+		background-position: 30px 100px;
+	}
+	.director-testimonial-wrapper .block-text {
+		padding-top: 50px;
+		max-width: initial;
+	}
+	.director-testimonial-wrapper .block-text p {
+		padding-bottom: 0px;
+	}
+	.pricing-card.featured-card {
+		margin: auto;
+	}
+	.hire-us-col2 {
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 20px;
+	}
+	.footer-address-col {
+		order: 5;
+		text-align: center;
+		width: 100%;
+		grid-column: 1 / span 4;
+		grid-row: 2;
 	}
 }
