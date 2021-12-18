@@ -27,6 +27,9 @@ header {
 		transform: translateY(0px);
 	}
 }
+.header-bottom div {
+	display: none;
+}
 .navbar ul.show {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
@@ -464,6 +467,8 @@ input[type="checkbox"] {
 	border-bottom: 2px dashed #cecece;
 }
 .hire-us-col2 textarea {
+	width: 100%;
+	padding-bottom: 40px;
 	margin-top: 20px;
 	margin-bottom: 0;
 }

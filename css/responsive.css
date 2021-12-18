@@ -10,6 +10,7 @@
 		padding: 10px 50px;
 	}
 	.header-bottom div {
+		display: block;
 		float: right;
 		padding-top: 10px;
 	}
