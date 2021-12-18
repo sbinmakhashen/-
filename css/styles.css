@@ -18,9 +18,24 @@ header {
 	right: 0;
 	z-index: 100;
 	animation: fade 0.2s;
-	padding: 10px 50px;
 }
 @keyframes fade {
+	0% {
+		transform: translateY(-20px);
+	}
+	100% {
+		transform: translateY(0px);
+	}
+}
+.navbar ul.show {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	padding: 0;
+	text-align: center;
+	animation: navbarFade 0.5s;
+	transition: 0.3s ease-in-out;
+}
+@keyframes navbarFade {
 	0% {
 		transform: translateY(-20px);
 	}

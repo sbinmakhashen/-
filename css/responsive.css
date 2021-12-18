@@ -1,11 +1,13 @@
 /* Tablet */
 @media screen and (max-width: 768px) {
+	/* header */
+	.header-bottom .header-bottom,
+	.header-bottom a,
 	.header-bottom {
 		display: inline-block;
 	}
-	.header-bottom .header-bottom,
-	.header-bottom a {
-		display: inline-block;
+	.header-bottom {
+		padding: 10px 50px;
 	}
 	.header-bottom div {
 		float: right;
@@ -13,22 +15,6 @@
 	}
 	.navbar {
 		display: none;
-	}
-	.navbar ul.show {
-		display: grid;
-		grid-template-columns: repeat(3, 1fr);
-		padding: 0;
-		text-align: center;
-		animation: navbarFade 0.5s;
-		transition: 0.3s ease-in-out;
-	}
-	@keyframes navbarFade {
-		0% {
-			transform: translateY(-20px);
-		}
-		100% {
-			transform: translateY(0px);
-		}
 	}
 	.navbar ul li {
 		margin-bottom: 10px;
@@ -40,6 +26,7 @@
 	.navbar ul .btn-primary {
 		padding: 5px;
 	}
+	/* hero */
 	#hero .container,
 	.feature-bottom-container,
 	.director-testimonial-wrapper,
@@ -61,6 +48,7 @@
 		max-width: initial;
 		padding: 0 50px;
 	}
+	/* features */
 	.feature-banner-wrapper {
 		padding-top: 20px;
 		margin: auto;
@@ -81,19 +69,41 @@
 	.director-testimonial-wrapper .block-text p {
 		padding-bottom: 0px;
 	}
+	/* pricing */
 	.pricing-card.featured-card {
 		margin: auto;
 	}
+	/* hire us */
 	.hire-us-col2 {
 		margin-left: auto;
 		margin-right: auto;
 		margin-bottom: 20px;
 	}
+	/* footer */
 	.footer-address-col {
 		order: 5;
 		text-align: center;
 		width: 100%;
 		grid-column: 1 / span 4;
-		grid-row: 2;
+		grid-row: 4;
+	}
+}
+/* Mobile phones */
+@media screen and (max-width: 480px) {
+	/* features */
+	.feature-cards-wrapper {
+		justify-content: center;
+	}
+	/* footer */
+	.footer-wrapper {
+		grid-template-columns: repeat(2, 1fr);
+		margin-left: 30px;
+	}
+	.footer-address-col {
+		grid-column: 1 / span 2;
+	}
+	.footer-company-wrapper,
+	.footer-documentation-wrapper {
+		margin: auto;
 	}
 }

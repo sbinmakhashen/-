@@ -57,6 +57,7 @@ button {
 	background-color: var(--font-color-link);
 	color: var(--white);
 	border-radius: 5px;
+	high
 }
 input,
 select,
