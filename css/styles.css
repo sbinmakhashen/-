@@ -9,16 +9,39 @@ header {
 	margin-bottom: 10px;
 	font-size: 12px;
 }
+.header-bottom.active {
+	background-color: var(--white);
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 100;
+	animation: fade 0.2s;
+	padding: 0 50px;
+}
+@keyframes fade {
+	0% {
+		transform: translateY(-20px);
+	}
+	100% {
+		transform: translateY(0px);
+	}
+}
 .navbar ul {
 	margin-left: 10px;
 }
 .navbar ul li {
 	padding-right: 15px;
 }
-
 .home,
+.navbar ul li a:hover,
 .hero-col1 .btn:last-child {
 	color: var(--font-color-link);
+}
+.navbar ul li:last-child a:hover {
+	border: 1px solid #cecece;
+	background-color: transparent;
 }
 /* hero */
 #hero {

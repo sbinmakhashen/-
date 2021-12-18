@@ -3,4 +3,7 @@
 	.container {
 		max-width: 900px;
 	}
+	.container.c-active {
+		max-width: 900px;
+	}
 }
