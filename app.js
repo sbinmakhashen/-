@@ -2,6 +2,7 @@
 const stickyHeader = document.getElementById('headerBottom');
 const navBtn = document.getElementById("navToggler");
 const navbar = document.getElementById('navbar');
+const ul = document.querySelector('#navbar ul');
 // functions
 window.addEventListener('scroll', (e) => {
     if(window.scrollY >= 500) {
@@ -13,5 +14,11 @@ window.addEventListener('scroll', (e) => {
 navBtn.addEventListener('click', (e) => toggleBtn(e));
 
 function toggleBtn(e) {
-    navbar.style.display = "block"
+    const isNavToggled = navbar.style.display === "none";
+    if(isNavToggled) {
+        navbar.style.display = "block"
+        ul.classList.add("show");
+    }else {
+        navbar.style.display = "none"
+    }
 }

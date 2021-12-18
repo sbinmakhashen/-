@@ -1,5 +1,8 @@
 /* Tablet */
 @media screen and (max-width: 768px) {
+	.header-bottom {
+		display: inline-block;
+	}
 	.header-bottom .header-bottom,
 	.header-bottom a {
 		display: inline-block;
@@ -11,8 +14,31 @@
 	.navbar {
 		display: none;
 	}
-	.navbar ul {
-		display: block;
+	.navbar ul.show {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		padding: 0;
+		text-align: center;
+		animation: navbarFade 0.5s;
+		transition: 0.3s ease-in-out;
+	}
+	@keyframes navbarFade {
+		0% {
+			transform: translateY(-20px);
+		}
+		100% {
+			transform: translateY(0px);
+		}
+	}
+	.navbar ul li {
+		margin-bottom: 10px;
+	}
+	.navbar ul li:last-child {
+		padding-right: 5px;
+		margin-bottom: 0;
+	}
+	.navbar ul .btn-primary {
+		padding: 5px;
 	}
 	#hero .container,
 	.feature-bottom-container,
