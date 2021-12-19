@@ -6,20 +6,20 @@ header {
 .header-top div a,
 .header-top a {
 	padding-right: 15px;
-	margin-bottom: 10px;
+	margin-bottom: var(--size-10);
 	font-size: 12px;
 }
 .header-bottom.active {
 	background-color: var(--white);
-	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	box-shadow: 0 0 var(--size-10) rgba(0, 0, 0, 0.1);
 	position: fixed;
 	top: 0;
 	left: 0;
 	right: 0;
 	z-index: 100;
 	animation: fade 0.2s;
-	padding-left: 50px;
-	padding-right: 50px;
+	padding-left: var(--size-50);
+	padding-right: var(--size-50);
 }
 @keyframes fade {
 	0% {
@@ -34,7 +34,7 @@ header {
 }
 
 .navbar ul {
-	margin-left: 10px;
+	margin-left: var(--size-10);
 }
 .navbar ul li {
 	padding-right: 15px;
@@ -51,7 +51,7 @@ header {
 /* hero */
 #hero {
 	background-color: var(--light-bg);
-	padding-bottom: 50px;
+	padding-bottom: var(--size-50);
 }
 #hero .container.flexbox {
 	align-items: unset;
@@ -80,29 +80,29 @@ header {
 .hero-col2 .google-icon-wrapper {
 	border-radius: 50%;
 	background-color: var(--white);
-	padding: 20px;
+	padding: var(--size-20);
 }
 .hero-col2 .hero-icon-wrapper {
-	max-width: 70px;
-	max-height: 70px;
+	max-width: var(--size-70);
+	max-height: var(--size-70);
 	width: 100%;
 }
 .hero-col2 .google-icon-wrapper {
-	max-width: 60px;
-	max-height: 60px;
-	padding: 10px;
+	max-width: var(--size-60);
+	max-height: var(--size-60);
+	padding: var(--size-10);
 }
 .google {
 	grid-area: google;
-	margin-left: 10px;
+	margin-left: var(--size-10);
 }
 .atlassian {
 	grid-area: atlassian;
-	margin-bottom: 40px;
+	margin-bottom: var(--size-40);
 }
 .asana {
 	grid-area: asana;
-	margin-top: 10px;
+	margin-top: var(--size-10);
 }
 .paypal {
 	grid-area: paypal;
@@ -112,7 +112,7 @@ header {
 }
 .google-ads {
 	grid-area: google-ads;
-	margin-top: 40px;
+	margin-top: var(--size-40);
 }
 .calendar {
 	grid-area: calendar;
@@ -120,8 +120,8 @@ header {
 /* features */
 .features-header {
 	text-align: center;
-	padding-top: 70px;
-	padding-bottom: 40px;
+	padding-top: var(--size-70);
+	padding-bottom: var(--size-40);
 }
 .features-header .section-title {
 	margin-bottom: 5px;
@@ -129,10 +129,10 @@ header {
 .feature-cards-wrapper .block {
 	display: block;
 	color: var(--font-color-link);
-	padding-top: 10px;
+	padding-top: var(--size-10);
 }
 .feature-card {
-	box-shadow: 0 10px 10px rgba(221, 221, 221, 0.4);
+	box-shadow: 0 var(--size-10) var(--size-10) rgba(221, 221, 221, 0.4);
 	display: inline-block;
 	max-width: 205px;
 	width: 100%;
@@ -162,7 +162,7 @@ header {
 	min-height: 385px;
 }
 .feature-bottom-container .block-text {
-	padding-left: 40px;
+	padding-left: var(--size-40);
 }
 .feature-bottom-container h2 {
 	font-size: 25px;
@@ -177,10 +177,10 @@ header {
 /* learn */
 .learn-header {
 	text-align: center;
-	padding-top: 40px;
+	padding-top: var(--size-40);
 }
 .learn-timeline {
-	padding-top: 70px;
+	padding-top: var(--size-70);
 	max-width: 620px;
 	width: 100%;
 	margin: auto;
@@ -195,25 +195,25 @@ header {
 	text-align: center;
 }
 .timeline-icons i:first-child {
-	padding-left: 20px;
+	padding-left: var(--size-20);
 }
 .timeline-icons span {
 	display: inline-block;
 	background-color: var(--font-color-light);
 	height: 1.02px;
 	width: 100%;
-	max-width: 100px;
-	margin: 0 20px;
+	max-width: var(--size-100);
+	margin: 0var (--size-20);
 }
 .timeline-icons span:last-child {
 	display: none;
 }
 .timeline-text {
-	padding-top: 10px;
+	padding-top: var(--size-10);
 	font-weight: 700;
 }
 .learn-banner {
-	padding-top: 40px;
+	padding-top: var(--size-40);
 	position: relative;
 	height: 100%;
 	margin-right: auto;
@@ -231,7 +231,7 @@ header {
 }
 .learn-btn {
 	background-color: var(--white);
-	padding: 15px 20px;
+	padding: 15pxvar (--size-20);
 	border-radius: 50%;
 	position: absolute;
 	top: 50%;
@@ -252,64 +252,64 @@ header {
 }
 .director-img {
 	max-width: 360px;
-	margin-left: 70px;
+	margin-left: var(--size-70);
 }
 .director-testimonial-wrapper .block-text {
 	width: 100%;
 	max-width: 400px;
 }
 .director-testimonial-wrapper .block-text img {
-	max-width: 80px;
+	max-width: var(--size-80);
 }
 .director-testimonial-wrapper .block-text p {
 	font-size: 18px;
 	line-height: 1.4;
-	padding-bottom: 30px;
+	padding-bottom: var(--size-30);
 }
 .info-person {
-	padding-bottom: 20px;
+	padding-bottom: var(--size-20);
 }
 .company-logo-wrapper {
-	margin-top: 80px;
+	margin-top: var(--size-80);
 	text-align: center;
 	justify-content: space-evenly;
 }
 .company-logos {
 	justify-content: space-around;
-	margin-top: 40px;
+	margin-top: var(--size-40);
 }
 .company-logo-wrapper img {
 	width: 100%;
-	max-width: 70px;
+	max-width: var(--size-70);
 }
 /* pricing */
 
 .pricing-header {
-	padding: 70px 0;
+	padding: var(--size-70) 0;
 	text-align: center;
 }
 .pricing-cards-container {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
-	gap: 10px;
+	gap: var(--size-10);
 	width: 100%;
 }
 
 .pricing-card {
 	width: 100%;
-	margin: 10px;
+	margin: var(--size-10);
 }
 .pricing-card img {
-	width: 30px;
-	height: 30px;
+	width: var(--size-30);
+	height: var(--size-30);
 }
 .pricing-card.featured-card {
 	grid-row: 1 / span 2;
 	grid-column: 1 / span 2;
-	margin-right: 20px;
-	box-shadow: 0 10px 10px rgba(221, 221, 221, 0.4);
+	margin-right: var(--size-20);
+	box-shadow: 0var (--size-10) var(--size-10) rgba(221, 221, 221, 0.4);
 	border-radius: 5px;
-	padding-top: 10px;
+	padding-top: var(--size-10);
 	width: 100%;
 	max-width: 360px;
 }
@@ -317,7 +317,7 @@ header {
 	font-size: 47px;
 	font-weight: 600;
 	margin: 0;
-	padding-left: 10px;
+	padding-left: var(--size-10);
 }
 .price::after {
 	content: "";
@@ -332,24 +332,24 @@ header {
 }
 .price span {
 	font-weight: 400;
-	font-size: 20px;
+	font-size: var(--size-20);
 }
 .pricing-card .section-subtitle {
 	line-height: 1.5;
 }
 .featured-card .section-subtitle {
 	display: block;
-	padding-top: 20px;
+	padding-top: var(--size-20);
 	padding-left: 25px;
 }
 .pricing-card .btn-group {
-	padding: 40px;
+	padding: var(--size-40);
 }
 .btn-group .section-subtitle {
 	display: block;
 	padding-top: 8px;
 	padding-left: 0;
-	font-size: 10px;
+	font-size: var(--size-10);
 }
 /* hire us */
 .hire-us-bg {
@@ -362,14 +362,14 @@ header {
 }
 .hire-us-col1 {
 	height: 100%;
-	margin-top: 20px;
+	margin-top: var(--size-20);
 	margin-left: 35px;
 }
 .hire-us-col1 .section-subtitle {
 	color: var(--font-color-light);
 }
 .testimonials-wrapper {
-	padding-top: 40px;
+	padding-top: var(--size-40);
 }
 .testimonial-desc {
 	font-size: 18px;
@@ -384,7 +384,7 @@ header {
 }
 .people-icons {
 	margin-top: 25px;
-	margin-left: 10px;
+	margin-left: var(--size-10);
 }
 .people-icons img {
 	width: 28px;
@@ -398,8 +398,8 @@ header {
 }
 .people-icons img:last-child {
 	margin-left: 14px;
-	width: 40px;
-	height: 40px;
+	width: var(--size-40);
+	height: var(--size-40);
 	opacity: initial;
 }
 .hire-us-col2 {
@@ -408,8 +408,8 @@ header {
 	height: 100%;
 	max-width: 387px;
 	margin-right: 54px;
-	margin-top: 50px;
-	padding: 25px 40px;
+	margin-top: var(--size-50);
+	padding: 25px var(--size-40);
 	border-radius: 5px;
 	box-shadow: 0 0 15px rgba(180, 172, 172, 0.4);
 }
@@ -432,11 +432,11 @@ header {
 }
 .input-fields input:nth-child(2),
 .input-fields select:nth-child(2) {
-	margin-left: 10px;
+	margin-left: var(--size-10);
 }
 .input-fields.policy {
 	align-items: initial;
-	margin-top: 10px;
+	margin-top: var(--size-10);
 }
 input[type="checkbox"] {
 	display: inline;
@@ -447,36 +447,36 @@ input[type="checkbox"] {
 }
 .input-fields.policy div:last-child {
 	padding-left: 5px;
-	margin-bottom: 20px;
+	margin-bottom: var(--size-20);
 }
 .input-fields.policy a {
-	font-size: 10px;
+	font-size: var(--size-10);
 	border-bottom: 2px dashed #cecece;
 }
 .hire-us-col2 textarea {
 	width: 100%;
-	padding-bottom: 40px;
-	margin-top: 20px;
+	padding-bottom: var(--size-40);
+	margin-top: var(--size-20);
 	margin-bottom: 0;
 }
 .hire-us-col2 .btn-outline {
 	color: var(--white);
-	margin-bottom: 20px;
+	margin-bottom: var(--size-20);
 	cursor: pointer;
 }
 
 /* footer */
 .footer-wrapper {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-	padding-top: 90px;
-	padding-bottom: 40px;
+	grid-template-columns: repeat(auto-fit, minmax(var(--size-100), 1fr));
+	padding-top: var(--size-90);
+	padding-bottom: var(--size-40);
 }
 .footer-address-col {
 	width: 100%;
 	grid-column: 1 / span 2;
-	padding: 10px 0;
-	margin-right: 20px;
+	padding: var(--size-10) 0;
+	margin-right: var(--size-20);
 }
 .footer-wrapper ul {
 	padding: 0;
