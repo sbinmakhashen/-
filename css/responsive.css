@@ -17,6 +17,22 @@
 	.navbar {
 		display: none;
 	}
+	.navbar ul.show {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		padding: 0;
+		text-align: center;
+		animation: navbarFade 0.5s;
+		transition: 0.3s ease-in-out;
+	}
+	@keyframes navbarFade {
+		0% {
+			transform: translateY(-20px);
+		}
+		100% {
+			transform: translateY(0px);
+		}
+	}
 	.navbar ul li {
 		margin-bottom: 10px;
 	}
@@ -101,6 +117,11 @@
 	.feature-cards-wrapper {
 		justify-content: center;
 	}
+	.pricing-card.featured-card {
+		width: 100%;
+		grid-column: initial;
+		grid-row: 1 / 3;
+	}
 	/* learn */
 	.timeline-icons span {
 		max-width: 10px;
@@ -113,6 +134,10 @@
 	.timeline-text p {
 		font-size: 10px;
 		padding: 0 2px;
+	}
+	/* pricing */
+	#pricing {
+		text-align: center;
 	}
 	/* footer */
 	.footer-wrapper {
