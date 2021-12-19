@@ -18,6 +18,8 @@ header {
 	right: 0;
 	z-index: 100;
 	animation: fade 0.2s;
+	padding-left: 50px;
+	padding-right: 50px;
 }
 @keyframes fade {
 	0% {
@@ -43,7 +45,7 @@ header {
 	color: var(--font-color-link);
 }
 .navbar ul li:last-child a:hover {
-	border: 1px solid #cecece;
+	border: 1px solid var(--font-color-light);
 	background-color: transparent;
 }
 /* hero */
@@ -197,7 +199,7 @@ header {
 }
 .timeline-icons span {
 	display: inline-block;
-	background-color: #cecece;
+	background-color: var(--font-color-light);
 	height: 1.02px;
 	width: 100%;
 	max-width: 100px;
@@ -323,7 +325,7 @@ header {
 	width: 100%;
 	max-width: 250px;
 	height: 1px;
-	background-color: #cecece;
+	background-color: var(--font-color-light);
 	margin-top: 15px;
 	margin-left: auto;
 	margin-right: auto;
@@ -364,7 +366,7 @@ header {
 	margin-left: 35px;
 }
 .hire-us-col1 .section-subtitle {
-	color: #cecece;
+	color: var(--font-color-light);
 }
 .testimonials-wrapper {
 	padding-top: 40px;
@@ -378,7 +380,7 @@ header {
 	margin-bottom: 0;
 }
 .testimonials-wrapper .person-position {
-	color: #cecece;
+	color: var(--font-color-light);
 }
 .people-icons {
 	margin-top: 25px;
